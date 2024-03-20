@@ -1,0 +1,62 @@
+.emirate_sec {
+  text-align: center;
+  height: 100vh;
+  margin-bottom: 100px;
+}
+
+.emirate_sec .emirate_Header {
+  margin-top: -2%;
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+.emirate_sec .content_wraper {
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.emirate_sec .content_wraper .AJM_map {
+  width: 100%;
+}
+
+.emirate_sec .detailContainer {
+  display: none;
+  position: absolute;
+  width: 20%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  border: #272727 2px solid;
+  background-color: #969390a6;
+  -webkit-box-shadow: 2px 2px 2px 2px #5a5a5a;
+          box-shadow: 2px 2px 2px 2px #5a5a5a;
+}
+
+.emirate_sec .detailContainer h1 {
+  font-size: 200%;
+}
+
+.emirate_sec .pin1 {
+  position: relative;
+  width: 20px;
+  right: 375px;
+  top: -350px;
+}
+
+.emirate_sec .pin2 {
+  position: relative;
+  width: 20px;
+  right: 350px;
+  top: -400px;
+}
+
+.emirate_sec .pin3 {
+  position: relative;
+  width: 20px;
+  right: 225px;
+  top: -475px;
+}
+/*# sourceMappingURL=ajmPins.css.map */

@@ -1,0 +1,144 @@
+@font-face {
+    font-family: FutuHv;
+    src: url(/SCSS/FutuHv.ttf);
+}
+body{
+    font-family: FutuHv;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+header{
+    width: 100%;
+    background-color: rgba(243, 243, 243, 0.5);
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav{
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    ul{
+        display: flex; 
+        width: 100%;
+        margin:0;
+        padding: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        justify-content: space-between;
+        transform: translate(0, 0);
+        li{
+            list-style: none;
+            #siteName{
+                margin: 0;
+                margin-top: 10px;
+            }
+            .none{
+                visibility: hidden;
+            }
+            a{
+                color: #272727;
+                font-size: 12px;
+                position: relative;
+                padding: 15px 5px;
+                width: 100px;
+                text-align: center;
+                font-weight: 600;
+                display: block;
+                text-decoration: none;
+                z-index: 2;
+                justify-content: center;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-top: 2px solid #272727;
+                    border-bottom: 2px solid #272727;
+                    transform: scaleY(2);
+                    opacity: 0;
+                    transition: .15s;
+                }
+                &:after{
+                    content: '';
+                    position: absolute;
+                    top: 2px;
+                    width: 100%;
+                    left: 0;
+                    height: 100%;
+                    background-color: rgba(160, 160, 160, 0.63);
+                    color: #ffffff;
+                    transform: scale(0);
+                    opacity: 0;
+                    transition: .15s;
+                }
+                &:hover {
+                    color: #FF8000;
+                    &:before {
+                      transform: scaleY(1);
+                      opacity: 1;
+                    }
+                    &:after {
+                      transform: scaleY(1);
+                      opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#mapArea{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    #map{
+        height: 100vh;
+        path{
+            fill: #272727;
+            pointer-events: all;
+        }
+
+        path:hover{
+            fill: #FF8000;
+        }
+    }
+}
+
+.detailContainer{
+    display: none;
+    float: right;
+    position: absolute;
+    width: 25%;
+    height: 65%;
+    border-radius: 10px;
+    border: #272727 2px solid;
+    margin-left: 10px;
+    background-color: #52504ea6;
+    box-shadow:2px 2px 2px 2px #5a5a5a;
+
+    img{
+        width: 90%;
+        border-radius: 5px;
+        box-shadow:2px 2px 2px 2px #4e4c4c;
+    }
+
+    h1{
+        font-size: 500%;
+    }
+
+    p{
+        padding: 10px;
+        margin: 10px;
+    }
+}

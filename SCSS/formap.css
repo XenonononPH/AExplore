@@ -1,0 +1,180 @@
+@font-face {
+  font-family: FutuHv;
+  src: url(/SCSS/FutuHv.ttf);
+}
+
+body {
+  font-family: FutuHv;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+}
+
+header {
+  width: 100%;
+  background-color: rgba(243, 243, 243, 0.5);
+  display: block;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  margin: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li #siteName {
+  margin: 0;
+  margin-top: 10px;
+}
+
+nav ul li .none {
+  visibility: hidden;
+}
+
+nav ul li a {
+  color: #272727;
+  font-size: 12px;
+  position: relative;
+  padding: 15px 5px;
+  width: 100px;
+  text-align: center;
+  font-weight: 600;
+  display: block;
+  text-decoration: none;
+  z-index: 2;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav ul li a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #272727;
+  border-bottom: 2px solid #272727;
+  -webkit-transform: scaleY(2);
+          transform: scaleY(2);
+  opacity: 0;
+  -webkit-transition: .15s;
+  transition: .15s;
+}
+
+nav ul li a:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  width: 100%;
+  left: 0;
+  height: 100%;
+  background-color: rgba(160, 160, 160, 0.63);
+  color: #ffffff;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+  -webkit-transition: .15s;
+  transition: .15s;
+}
+
+nav ul li a:hover {
+  color: #FF8000;
+}
+
+nav ul li a:hover:before {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  opacity: 1;
+}
+
+nav ul li a:hover:after {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  opacity: 1;
+}
+
+#mapArea {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+#mapArea #map {
+  height: 100vh;
+}
+
+#mapArea #map path {
+  fill: #272727;
+  pointer-events: all;
+}
+
+#mapArea #map path:hover {
+  fill: #FF8000;
+}
+
+.detailContainer {
+  display: none;
+  float: right;
+  position: absolute;
+  width: 25%;
+  height: 65%;
+  border-radius: 10px;
+  border: #272727 2px solid;
+  margin-left: 10px;
+  background-color: #52504ea6;
+  -webkit-box-shadow: 2px 2px 2px 2px #5a5a5a;
+          box-shadow: 2px 2px 2px 2px #5a5a5a;
+}
+
+.detailContainer img {
+  width: 90%;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 2px 2px #4e4c4c;
+          box-shadow: 2px 2px 2px 2px #4e4c4c;
+}
+
+.detailContainer h1 {
+  font-size: 500%;
+}
+
+.detailContainer p {
+  padding: 10px;
+  margin: 10px;
+}
+/*# sourceMappingURL=formap.css.map */

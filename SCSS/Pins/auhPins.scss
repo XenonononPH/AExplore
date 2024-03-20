@@ -1,0 +1,65 @@
+.emirate_sec{
+    text-align: center;
+    height: 100vh;
+    margin-bottom: 100px;
+    .emirate_Header{
+        margin-top: -2%;
+        text-align: center;
+        font-size: 40px;
+        text-decoration: underline;
+    }
+
+    .content_wraper{
+        margin: 0 auto;
+        max-width: 1000px;
+        text-align: center;
+
+        .AUH_map{
+            width: 100%;
+        }
+    }
+
+        .detailContainer{
+            display: none;
+            position: absolute;
+            width: 20%;
+            height: fit-content;
+            border-radius: 10px;
+            border: #272727 2px solid;
+            background-color: #969390a6;
+            box-shadow:2px 2px 2px 2px #5a5a5a;
+        
+            h1{
+                font-size: 200%;
+            }
+        }
+        
+        .pin1{
+            position: relative;
+            width: 20px;
+            right: -310px;
+            top: -450px;
+        }
+        
+        .pin2{
+            position: relative;
+            width: 20px;
+            right: -340px;
+            top: -410px;
+        }
+        
+        .pin3{
+            position: relative;
+            width: 20px;
+            right: -300px;
+            top: -440px;
+        }
+        
+        .pin4{
+            position: relative;
+            width: 20px;
+            right: -240px;
+            top: -520px;
+        }
+    
+}
